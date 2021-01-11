@@ -1,6 +1,23 @@
 <html>
     <head>
         <title>Django Girls blog</title>
+        <style>
+            body{
+                background-image:url('https://64.media.tumblr.com/7dee7cd84559a9c1ec63027dd9ed54d0/tumblr_ouhjs1KixL1szcb9vo1_500.gifv');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+            div{
+                text-align: center;
+                font-size: 25px;
+                color: aliceblue;
+                background-color: seagreen;
+            }
+            h1{
+                color: red;
+            }
+        </style>
     </head>
     <body>
         <div>
@@ -8,9 +25,7 @@
         </div>
 
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            {{ posts }}
         </div>
 
         <div>
